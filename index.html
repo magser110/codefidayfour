@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let price = 200;
+    // let discountRate = 0.15;
+    // let taxRate = 0.08;
+
+    // let discount = price * discountRate;
+    // let discountedPrice = price - discount;
+    // let tax = discountedPrice * taxRate;
+    // let finalPrice = discountedPrice + tax;
+    // console.log(`Original Price: $${price.toFixed(2)}, Discount: $${discount.toFixed(2)}, Tax: $${tax.toFixed(2)}, Final Price: $${finalPrice.toFixed(2)}` );
+
+    
+    function calculateFinalPrice(price, discountRate = 0.1, taxRate = 0.08) {
+        const discount = price * discountRate;
+        const discountedPrice = price - discount;
+        const tax = discountedPrice * taxRate;
+        const finalPrice = discountedPrice + tax;
+
+        console.log(`Original Price = $${price.toFixed(2)}`);
+        console.log(`Discount = $${discount.toFixed(2)}`);
+        console.log(`Tax = $${tax.toFixed(2)}`);
+        console.log(`Final Price = $${finalPrice.toFixed(2)}`);
+        return finalPrice;
+    }
+
+    calculateFinalPrice(100);
+    calculateFinalPrice(66);
+    calculateFinalPrice(435);
+    calculateFinalPrice(99983);
+
+
+    //     // Example: Falsy Values Example in Action
+    // const cartQuantity = 0; // Falsy value
+    // if (cartQuantity) {
+    //     console.log("Cart has items.");
+    // } else {
+    //     console.log("Cart is empty."); // Output: "Cart is empty."
+    // }
+
+    // // Example: Truthy Values Example in Action
+    // const userName = "John"; // Truthy value
+    // if (userName) {
+    //     console.log(`Welcome, ${userName}!`); // Output: "Welcome, John!"
+    // } else {
+    //     console.log("Please log in.");
+    // }
+
+
+    // if (0) {
+    //     console.log("This won't run because 0 is falsy.");
+    // } else {
+    //     console.log("0 is considered falsy in JavaScript.");// Output: 0 is considered falsy in JavaScript.
+    // }
+
+    // if ("text") {
+    //     console.log("This will run because 'text' is truthy.");//Output: This will run because 'text' is truthy.
+    // }
+
+
+
+    // let age = 17;
+
+    // if (age >= 18) {
+    //     console.log("You are eligible to vote.");
+    // } else {
+    //     console.log("You are not old enough to vote.");
+    // }
+
+
+    // let isLoggedIn = true;
+    // let hasAccess = false;
+
+    // if (isLoggedIn && hasAccess) {
+    //     console.log("Access granted!"); // Output: "Access granted!"
+    // } else {
+    //     console.log("Access denied."); // Output: "Access denied."
+    // }
+
+
+    // const isWeekend = true;
+    // const isHoliday = false;
+
+    // if (isWeekend || isHoliday) {
+    //     console.log("You can relax today!"); // Output: "You can relax today!" (if either condition is true)
+    // } else {
+    //     console.log("It's a workday."); // Output: "It's a workday." (if both conditions are false)
+    // }
+
+
+
+
+
+    </script>
+</body>
+</html>
